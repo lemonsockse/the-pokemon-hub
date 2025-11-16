@@ -33,7 +33,7 @@ ul li a:hover {
 nav {
   justify-content: center;
   margin: 20px auto;  /* centers the nav bar itself */
-  width: fit-content;
+  width: fit;
 }
 
 nav ul {
