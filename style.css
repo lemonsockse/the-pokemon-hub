@@ -1,43 +1,76 @@
 body {
   background-color: #c8d8e5;
-  font-family: 'Fredoka', sans-serif; /* Font for the entire page */
+  font-family: 'Fredoka', sans-serif;
 }
 
-nav {
-  margin: 20px auto;  /* centers the nav bar itself */
-  width: fit-content;
-  display: flex;
-  justify-content: center; /* centers the items */
+/* Or apply it to specific elements, like the navigation */
+nav a {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 16px; /* Example font size */
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+}  
+.link {
+  color: #72a3c3;
 }
 
 ul {
   list-style-type: none;
+  border-radius: 20px;
   margin: 0;
-  padding: 0;
+  padding: 10px 20px;
+  overflow: hidden;
   background-color: #fef8ec;
-  display: flex;  /* Ensures that the links are laid out horizontally */
 }
 
 ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: #72a3c3;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 20px;
+  text-decoration: none;
   margin: 8px;
 }
 
-ul li a, nav a {
-  color: #72a3c3;
-  text-decoration: none;
-  padding: 14px 16px;
-  font-size: 16px;  /* You can adjust font-size here */
-  text-align: center;
-  border-radius: 20px;  /* rounded link */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
-}
-
-ul li a:hover, nav a:hover {
+ul li a:hover {
   background-color: #fdecd0;
-  color: #000;  /* Change text color on hover */
 }
 
-/* Blurred glow effect on hover */
+nav {
+  justify-content: center;
+  margin: 20px auto;  /* centers the nav bar itself */
+  width: fit;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* centers the items */
+  
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: #72a3c3;
+  padding: 10px 20px;
+  border-radius: 20px;        /* rounded link */
+  overflow: hidden;           /* needed for blur masking */
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+/* blurred glow on hover */
 nav a::before {
   content: "";
   position: absolute;
@@ -46,14 +79,18 @@ nav a::before {
   transform: translate(-50%, -50%);
   width: 0;
   height: 0;
-  border-radius: 50%;  /* fully rounded */
+  border-radius: 50%;         /* fully rounded */
   background: #fdecd0;
-  filter: blur(20px);  /* blur effect */
-  transition: width 0.35s ease, height 0.35s ease;
-  z-index: -1;  /* Make sure it stays behind the text */
+  filter: blur(20px);         /* blur effect */
+  transition: 0.35s ease;
+  z-index: -1;                /* behind the text */
 }
 
 nav a:hover::before {
   width: 120%;
   height: 120%;
+}
+
+nav a:hover {
+  color: #000;                /* optional: text changes color when glowing */
 }
