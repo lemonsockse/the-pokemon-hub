@@ -7,11 +7,10 @@ body {
 
 ul {
   list-style-type: none;
-  border-radius: 30px;
+  border-radius: 20px;
   margin: 0;
   padding: 10px 20px;
   overflow: hidden;
-  justify-content: center;
   background-color: #fef8ec;
 }
 
@@ -32,4 +31,5 @@ ul li a:hover {
 }
 
 nav {
-  
+  justify-content: center;
+}
