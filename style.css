@@ -66,7 +66,7 @@ nav a::before {
   height: 0;
   border-radius: 50%;         /* fully rounded */
   background: #fdecd0;
-  filter: blur(12px);         /* blur effect */
+  filter: blur(20px);         /* blur effect */
   transition: 0.35s ease;
   z-index: -1;                /* behind the text */
 }
