@@ -28,3 +28,7 @@ ul li a {
 ul li a:hover {
   background-color: #fdecd0;
 }
+
+li{
+    display: inline;
+}
