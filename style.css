@@ -41,6 +41,6 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: center; /* centers the items */
-  width: max-content;      /* prevents stretching */
+  
 }
 
