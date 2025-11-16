@@ -1,6 +1,18 @@
 body {
   background-color: #c8d8e5;
-  font: fredoka;
+  font-family: 'Fredoka', sans-serif;
+}
+
+/* Or apply it to specific elements, like the navigation */
+nav a {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 16px; /* Example font size */
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
 }  
 .link {
   color: #72a3c3;
