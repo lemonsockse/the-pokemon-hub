@@ -3,28 +3,46 @@ body {
   font-family: 'Fredoka', sans-serif;
 }
 
-/* Or apply it to specific elements, like the navigation */
-nav a {
-  font-family: 'Fredoka', sans-serif;
-  font-size: 16px; /* Example font size */
-  text-decoration: none;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 20px;
+
+/* The Pokemon Hub */
+
+header {
+  
+  position: absolute;
+  width: 642.7;
+  height: 44px;
+  left: calc(50% - 620px/2);
+  top: 16px;
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  display:flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.65em;
+  color: #81A4C4;
 }
 
-}  
+  
 .link {
-  color: #72a3c3;
+  color: #FCF8EC;
 }
 
 ul {
   list-style-type: none;
-  border-radius: 20px;
+ /* Rectangle 2 */
+  position: fixed;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 85%;
   margin: 0;
-  padding: 10px 20px;
+  padding: 15px 20px;
   overflow: hidden;
   background-color: #fef8ec;
+  align-items: flex-end;
 }
 
 ul li {
@@ -33,16 +51,23 @@ ul li {
 
 ul li a {
   display: block;
-  color: #72a3c3;
   text-align: center;
+  
   padding: 14px 16px;
   font-size: 20px;
   text-decoration: none;
-  margin: 8px;
+  margin: 16px 20px;
+  background-color: #A9C4D7;
+
 }
 
-ul li a:hover {
-  background-color: #fdecd0;
+.link :hover {
+  background-color: #81A4C4;
+}
+
+
+.active {
+  background-color: #4A769F;
 }
 
 nav {
@@ -64,33 +89,48 @@ nav a {
   text-decoration: none;
   color: #72a3c3;
   padding: 10px 20px;
-  border-radius: 20px;        /* rounded link */
+  border-radius: 25px;        /* rounded link */
   overflow: hidden;           /* needed for blur masking */
   z-index: 1;
   transition: color 0.3s ease;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 16px; /* Example font size */
 }
 
-/* blurred glow on hover */
-nav a::before {
-  content: "";
+.filter {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 0;
-  border-radius: 50%;         /* fully rounded */
-  background: #fdecd0;
-  filter: blur(20px);         /* blur effect */
-  transition: 0.35s ease;
-  z-index: -1;                /* behind the text */
+  width: 287px;
+  height: 480px;
+  left: 25px;
+  top: 169px;
+  border-radius: 25px;
+  background: #A9C4D7;
+  border-radius: 43px;
+  overflow: hidden;
 }
 
-nav a:hover::before {
-  width: 120%;
-  height: 120%;
+.filtitle {
+  /* Rectangle 9 */
+
+position: relative;
+width: 231px;
+height: 56px;
+left: 24px;
+background: #FCEDD0;
+border-radius: 20px;
+text-align: center;
 }
 
-nav a:hover {
-  color: #000;                /* optional: text changes color when glowing */
+p {
+  position:relative;
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 0.175em;
+  align-items: center;
+  margin: 29px -24px;
+  width: 255px;
+  justify-content: center;
+  text-align: center;
 }
