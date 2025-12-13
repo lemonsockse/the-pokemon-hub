@@ -7,8 +7,7 @@ body {
 /* The Pokemon Hub */
 
 header {
-  
-  position: absolute;
+  position: fixed;
   width: 642.7;
   height: 44px;
   left: calc(50% - 620px/2);
@@ -17,11 +16,12 @@ header {
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
-  display:flex;
+  
   align-items: center;
   text-align: center;
   letter-spacing: 0.65em;
   color: #81A4C4;
+  display: inline-block;
 }
 
   
@@ -33,7 +33,7 @@ ul {
   list-style-type: none;
  /* Rectangle 2 */
   position: fixed;
-  position: absolute;
+  
   left: 0%;
   right: 0%;
   top: 0%;
@@ -47,18 +47,18 @@ ul {
 
 ul li {
   float: left;
+  
 }
 
 ul li a {
   display: block;
   text-align: center;
-  
   padding: 14px 16px;
   font-size: 20px;
   text-decoration: none;
   margin: 16px 20px;
   background-color: #A9C4D7;
-
+  
 }
 
 .link :hover {
@@ -74,6 +74,7 @@ nav {
   justify-content: center;
   margin: 20px auto;  /* centers the nav bar itself */
   width: fit;
+  position: fixed;
 }
 
 nav ul {
@@ -85,7 +86,7 @@ nav ul {
 }
 
 nav a {
-  position: relative;
+  position: static;
   text-decoration: none;
   color: #72a3c3;
   padding: 10px 20px;
@@ -100,7 +101,7 @@ nav a {
 .filter {
   position: absolute;
   width: 287px;
-  height: 480px;
+  height: 79%;
   left: 25px;
   top: 169px;
   border-radius: 25px;
