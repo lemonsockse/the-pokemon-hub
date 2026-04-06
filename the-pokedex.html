@@ -1,35 +1,30 @@
-<title>The Pokemon Hub</title>
+<title>The Pokedex</title>
 <link href='style.css' rel='stylesheet'>
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+  
+          $(function(){
+              $("#headerContainer").load("header.html");
+              //$("#footerContainer").load("footer.html");
+              //$("#sidebarContainer").load("sidebar.html");
+          
+          });
+        
+        
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("link").click(function(){
+    $("pageHeader").html("The Hub");
+  });
+});
+</script>
 </head>
 
 <body>
-  <div>
-      <nav class="mrk-nav">
-        
-        <ul>
-          <div>
-            <header>The Pokemon Hub</header>
-          </div>
-            <li>
-              <a href="index.html" id="hub" class='link'>The Hub</a>
-            </li>
-            <li>
-              <a href="the-pokedex.html" class='link active'>The Pokedex</a>
-            </li>
-            <li>
-              <a class="link">The Shinydex</a>
-            </li>
-            <li>
-              <a class="link">Breeding Tracker</a>
-            </li>
-            <li>
-              <a class="link">Go to Sleep</a>
-            </li>
-        </ul>
-      </nav>
-    </div>
+  <div id="headerContainer"></div>
 
 </body>

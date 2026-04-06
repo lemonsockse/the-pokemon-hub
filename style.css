@@ -1,17 +1,17 @@
 body {
   background-color: #c8d8e5;
   font-family: 'Fredoka', sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 
-
-/* The Pokemon Hub */
-
-header {
-  position: fixed;
-  width: 642.7;
-  height: 44px;
-  left: calc(50% - 620px/2);
-  top: 16px;
+.pageHeader{
+  
+  padding: 0.5em 0px 0px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 80%;
   font-family: 'Fredoka';
   font-style: normal;
   font-weight: 600;
@@ -21,19 +21,29 @@ header {
   text-align: center;
   letter-spacing: 0.65em;
   color: #81A4C4;
-  display: inline-block;
+}
+/* The Pokemon Hub */
+
+header {
+
+}
+#headerContainer{
+
+  position: fixed;
+  margin: 0px;
+  padding: 0px;
+  display:block;
+  background-color: #fef8ec;
+  width: 100%;
 }
 
-  
 .link {
   color: #FCF8EC;
 }
 
 ul {
   list-style-type: none;
- /* Rectangle 2 */
-  position: fixed;
-  
+ /* Rectangle 2 */  
   left: 0%;
   right: 0%;
   top: 0%;
@@ -41,7 +51,6 @@ ul {
   margin: 0;
   padding: 15px 20px;
   overflow: hidden;
-  background-color: #fef8ec;
   align-items: flex-end;
 }
 
@@ -71,10 +80,6 @@ ul li a {
 }
 
 nav {
-  justify-content: center;
-  margin: 20px auto;  /* centers the nav bar itself */
-  width: fit;
-  position: fixed;
 }
 
 nav ul {

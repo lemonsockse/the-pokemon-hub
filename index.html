@@ -1,35 +1,23 @@
 <title>The Pokemon Hub</title>
 <link href='style.css' rel='stylesheet'>
-<head>
+<head id="pageHeader">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+  
+          $(function(){
+              $("#headerContainer").load("header.html");
+              //$("#footerContainer").load("footer.html");
+              //$("#sidebarContainer").load("sidebar.html");
+          
+          });
+        
+        
+  </script>
 </head>
-
 <body>
-    <div>
-      <nav class="mrk-nav">
-      
-        <ul class="link">
-          <div>
-            <header>The Pokemon Hub</header>
-          </div>
-            <li class="link">
-              <a href="index.html" id="hub" class='link active tab'>The Hub</a>
-            </li>
-            <li>
-              <a href="the-pokedex.html" class='link tab'>The Pokedex</a>
-            </li>
-            <li>
-              <a class="link tab">The Shinydex</a>
-            </li>
-            <li>
-              <a class="link tab">Breeding Tracker</a>
-            </li>
-            <li>
-              <a class="link tab">Go to Sleep</a>
-            </li>
-        </ul>
-      </nav>
+    <div id="headerContainer">
+
     </div>
    <div class="filter">
     <section class="filtitle">
